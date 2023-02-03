@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "How many number you want ?:"
+read number
+echo "The random number are:"
+for n in 'seq "$number"'
+do
+randomNumber=$(shuf -i 10-100 -n1)
+echo $randomNumber
+done
